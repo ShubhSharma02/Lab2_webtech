@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #wrap {
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        z-index: 99;
+        position: relative;
+        background-color: #359f37;
+      }
+      .navbar {
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+      }
+      .navbar li {
+        height: auto;
+        width: 135px;
+        float: left;
+        text-align: center;
+        list-style: none;
+        font: normal bold 13px/1em Arial, Verdana, Helvetica;
+        padding: 0;
+        margin: 0;
+        background-color: #375c7a;
+      }
+      .navbar a {
+        padding: 18px 0;
+        border-left: 1px solid #0e857f;
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+      .navbar li:hover
+       {
+        background-color: #4b155a;
+      }
+      .navbar li ul {
+        display: none;
+        height: auto;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar li:hover ul {
+        display: block;
+      }
+      .navbar li ul li {
+        background-color: #1b416c;
+      }
+      .navbar li ul li a {
+        border-left: 1px solid #170c61;
+        border-right: 1px solid #37a81b;
+        border-top: 1px solid #45a8cd;
+        border-bottom: 1px solid #bf8e52;
+      }
+      .navbar li ul li a:hover {
+        background-color: #4b1e2b;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <ul class="navbar">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Skills</a>
+          <ul>
+            <li>
+              <a href="https://www.geeksforgeeks.org/c-language-introduction/" target = "_blank">C</a>
+            </li>
+            <li>
+              <a href="https://www.geeksforgeeks.org/java/" target = "_blank">java</a>
+            </li>
+            <li>
+              <a href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/?ref=shm" target = "_blank">DSA</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Quizzes</a>
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com/c/c_quiz.php" target = "_blank">C</a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/java/java_quiz.asp" target = "_blank">java</a>
+            </li>
+            <li>
+              <a href="https://www.geeksforgeeks.org/50-data-structures-mcqs-with-answers/" target = "_blank">DSA</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
