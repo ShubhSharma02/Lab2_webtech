@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Webpage Of T_3</title>
+        <style>
+            .myclass{
+                background-color: #C8A2C8;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>you have reached task 3!</h1>
+        <button onclick="changeThePage();">Click Me!</button>
+        <script type="text/javascript">
+            changeThePage = function(){   
+                alert("body has class =" +document.body.className);
+                document.body.className="myclass";
+                alert("body has class =" +document.body.className);
+                document.body.innerHTML= "<h2>I have successfully completed Task 3</h2>";
+            }
+
+        </script>
+    </body>
+</html>

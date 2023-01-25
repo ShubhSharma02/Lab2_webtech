@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Task_@_4</title>
+        <style>
+            .new-style {
+                color: yellowgreen;
+                font-size: 28pt;
+                font-weight: strong;
+            }
+        </style>
+    </head>
+     <body>
+        <header>
+            <h1><u>Hello in different Languages</u></h1>
+        </header>
+        <nav>
+            <ul>
+                <li>Hola -- espanol</li>
+                <li>Guten Tag -- german</li>
+                <li>Bonjour -- french</li>
+            </ul>
+        </nav>
+        <main id="main-section">
+            <h2><u>Initial Main Section Content</u></h2>
+            <p>The customer is very important, the customer will be followed by the customer. But the author, who flatters the throat with a loud voice, needs to promote the fear of drinking, not the fear of laughter.</p>
+        </main>
+        <footer>
+            <p>Task 4 by 21MC3015</p>
+        </footer>
+        <button id="replace-button">Replace Content</button>
+        <script>
+            var button = document.getElementById("replace-button");
+            var mainSection = document.getElementById("main-section");
+
+            button.addEventListener("click", function(){
+            mainSection.innerHTML = `
+                <h2 class="new-style">New Main Section Content</h2>
+                <p class="new-style">This is the new content with different style</p>
+            `;
+      });
+    </script>
+  </body>
+</html>
