@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Header Color Changer</title>
+        <style>
+            .magenta-color {
+                color: magenta;
+            }
+            .aquamarine-color {
+                color: aquamarine;
+            }
+            .blue-color {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id ="heading"><u>Hello in different Languages</u></h1>
+        </header>
+        <nav>
+            <ul>
+                <li>Hola -- espanol</li>
+                <li>Guten Tag -- german</li>
+                <li>Bonjour -- french</li>
+            </ul>
+        </nav>
+        <button id="color-button">Change Color</button>
+        <script>
+            var button = document.getElementById("color-button");
+            var heading = document.getElementById("heading");
+            var colors = ["magenta-color", "aquamarine-color", "blue-color"];
+            var colorIndex = 0;
+
+            button.addEventListener("click", function(){
+                //1st way: change color by inline style
+                heading.style.color = colors[colorIndex];
+                //2nd way: change color by class
+                heading.className = colors[colorIndex];
+                //3rd way: change color by classList
+                heading.classList.add(colors[colorIndex]);
+                colorIndex = (colorIndex + 1) % colors.length;
+            });
+        </script>
+    </body>
+</html>
