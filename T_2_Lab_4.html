@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Second Task</title>
+    </head>
+    <body>
+        <h1 id="heading">Task_@_2</h1>
+        <button onclick="changeTheTextFunc();">Click here!!!</button>
+        <script>
+            // var button = document.getElementById("clicker");
+            var heading = document.getElementById("heading");
+            var text = ["I Am A Newbie","@ WebDev"]; 
+            var textIndex = 0;
+            changeTheTextFunc = function(){
+                document.body.style.backgroundColor = "#90EE90";
+                heading.style.color = "red";
+                heading.style.fontSize ="48 pt";
+                heading.innerHTML = text[textIndex];
+                textIndex = (textIndex + 1) % text.length;
+            }
+        </script>
+    </body>
+</html>
