@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Shopping List</title>
+        <link rel="stylesheet" type="text/css" href="T1.css">
+    </head>
+    <body>
+        <h1>Shopping List</h1>
+        <form id="shopping-form">
+            <input type="text" id="item-input" placeholder="Enter item">
+            <button type="submit">Add</button>
+        </form>
+        <ul id="shopping-list">
+        </ul>
+        <h5>Page Access Counter</h5>
+        <p>You have accessed this page <span id="access-count"></span> times.</p>
+        <script src="T1.js"></script>
+        <script>
+            const accessCountElement = document.getElementById("access-count");
+            let accessCount = localStorage.getItem("accessCount");
+            if (!accessCount) {
+                accessCount = 1;
+                } else {
+                    accessCount = parseInt(accessCount) + 1;
+                }
+            accessCountElement.innerText = accessCount;
+            localStorage.setItem("accessCount", accessCount);
+        </script>
+    </body>
+</html>
